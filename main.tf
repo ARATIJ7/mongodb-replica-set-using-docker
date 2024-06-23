@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_instance" "mongo" {
   count         = var.replica_count
-  ami           = "ami-03a9bcb2cbc1a2960"  # Amazon Linux 2 AMI
+  ami           = "ami-076fe60835f136dc9"  # Amazon Linux 2 AMI
   instance_type = var.instance_type
   key_name      = var.key_name
 
